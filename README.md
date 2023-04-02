@@ -2,8 +2,8 @@
 
 ## Files
 
--   <files/keyboard_quantizer_rp_e34d270.uf2>
--   <files/CH559USB_b8a6387.bin>
+-   [keyboard_quantizer_rp_e34d270.uf2](files/keyboard_quantizer_rp_e34d270.uf2)
+-   [CH559USB_b8a6387.bin](files/CH559USB_b8a6387.bin)
 
 ---
 
