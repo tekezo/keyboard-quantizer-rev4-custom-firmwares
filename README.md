@@ -5,6 +5,14 @@
 -   [keyboard_quantizer_rp_e34d270.uf2](files/keyboard_quantizer_rp_e34d270.uf2)
 -   [CH559USB_b8a6387.bin](files/CH559USB_b8a6387.bin)
 
+## Changes
+
+-   qmk_firmware
+    -   Disable debounce.
+    -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
+-   CH559sdccUSBHost
+    -   Disable delay in the main loop to prevent RollerMouse Mobile input events from being dropped.
+
 ---
 
 ## Repositories
