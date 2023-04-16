@@ -2,12 +2,12 @@
 
 ## Files
 
--   [keyboard_quantizer_rp_e34d270.uf2](files/keyboard_quantizer_rp_e34d270.uf2)
+-   [keyboard_quantizer_rp_10c6ebd.uf2](files/keyboard_quantizer_rp_10c6ebd.uf2)
 -   [CH559USB_bd3a9e7.bin](files/CH559USB_bd3a9e7.bin)
 
 ## Changes
 
--   keyboard_quantizer_rp_e34d270.uf2
+-   keyboard_quantizer_rp_10c6ebd.uf2
     -   Disable debounce.
     -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
 -   CH559USB_bd3a9e7.bin
@@ -22,7 +22,7 @@
     -   Follow the official instructions.
     -   <https://github.com/sekigon-gonnoc/keyboard-quantizer-doc/blob/master/rev4.md#%E3%83%9B%E3%82%B9%E3%83%88%E7%94%A8%E3%83%95%E3%82%A1%E3%83%BC%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2>
     -   Example on macOS.
-        -   `python3 ch559update.py flash -p /dev/tty.usbmodeme34d270e3c6 -f CH559USB_bd3a9e7.bin -b`
+        -   `python3 ch559update.py flash -p /dev/tty.usbmodem10c6ebd2836 -f CH559USB_bd3a9e7.bin -b`
 
 ---
 
