@@ -1,17 +1,29 @@
-# Custom firmwares for Keyboard Quantizer rev4
+# Custom firmwares for Keyboard Quantizer
 
 ## Files
+
+### For Keyboard Quantizer rev4
 
 -   [keyboard_quantizer_rp_10c6ebd.uf2](files/keyboard_quantizer_rp_10c6ebd.uf2)
 -   [CH559USB_bd3a9e7.bin](files/CH559USB_bd3a9e7.bin)
 
+### For Keyboard Quantizer Mini
+
+-   [keyboard_quantizer_mini_62e20299e86.uf2](files/keyboard_quantizer_mini_62e20299e86.uf2)
+
 ## Changes
 
--   keyboard_quantizer_rp_10c6ebd.uf2
-    -   Disable debounce.
-    -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
--   CH559USB_bd3a9e7.bin
-    -   Disable delay in the main loop to prevent RollerMouse Mobile input events from being dropped.
+-   For Keyboard Quantizer rev4
+    -   keyboard_quantizer_rp_10c6ebd.uf2
+        -   Disable debounce.
+        -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
+    -   CH559USB_bd3a9e7.bin
+        -   Disable delay in the main loop to prevent RollerMouse Mobile input events from being dropped.
+-   For Keyboard Quantizer mini
+    -   keyboard_quantizer_mini_62e20299e86.uf2
+        -   Disable debounce.
+        -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
+        -   Change serial number.
 
 ## How to update device firmware
 
@@ -28,14 +40,20 @@
 
 ## Repositories
 
--   qmk_firmware
-    -   <https://github.com/tekezo/qmk_firmware/tree/rp2040-tekezo>
--   CH559sdccUSBHost
-    -   <https://github.com/tekezo/CH559sdccUSBHost/tree/quantizer_ex-rev4>
+-   For Keyboard Quantizer rev4
+    -   qmk_firmware
+        -   <https://github.com/tekezo/qmk_firmware/tree/rp2040-tekezo>
+    -   CH559sdccUSBHost
+        -   <https://github.com/tekezo/CH559sdccUSBHost/tree/quantizer_ex-rev4>
+-   For Keyboard Quantizer mini
+    -   qmk_firmware
+        -   <https://github.com/tekezo/qmk_firmware/tree/quantizer_mini-tekezo>
 
 ## How to build firmwares
 
-### qmk_firmware
+### For Keyboard Quantizer rev4
+
+#### qmk_firmware
 
 Run the following commands on Ubuntu 22.04.
 
@@ -45,7 +63,7 @@ cd qmk_firmware
 SERIAL_NUMBER=$(git rev-parse --short HEAD) make keyboard_quantizer/rp:default:uf2
 ```
 
-### CH559sdccUSBHost
+#### CH559sdccUSBHost
 
 Run the following commands on Windows.
 
@@ -53,4 +71,16 @@ Run the following commands on Windows.
 cd CH559sdccUSBHost
 
 compile-rev4.bat
+```
+
+### For Keyboard Quantizer Mini
+
+#### qmk_firmware
+
+Run the following commands on Ubuntu 22.04.
+
+```shell
+cd qmk_firmware
+
+SERIAL_NUMBER=$(git rev-parse --short HEAD) make keyboard_quantizer/mini:default:uf2
 ```
