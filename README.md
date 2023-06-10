@@ -9,21 +9,24 @@
 
 ### For Keyboard Quantizer Mini
 
--   [keyboard_quantizer_mini_62e20299e86.uf2](files/keyboard_quantizer_mini_62e20299e86.uf2)
+-   [keyboard_quantizer_mini_c4cca1dd1a6.uf2](files/keyboard_quantizer_mini_c4cca1dd1a6.uf2)
 
 ## Changes
 
--   For Keyboard Quantizer rev4
-    -   keyboard_quantizer_rp_10c6ebd.uf2
-        -   Disable debounce.
-        -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
-    -   CH559USB_bd3a9e7.bin
-        -   Disable delay in the main loop to prevent RollerMouse Mobile input events from being dropped.
--   For Keyboard Quantizer mini
-    -   keyboard_quantizer_mini_62e20299e86.uf2
-        -   Disable debounce.
-        -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
-        -   Change serial number.
+### For Keyboard Quantizer rev4
+
+-   keyboard_quantizer_rp_10c6ebd.uf2
+    -   Disable debounce.
+    -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
+-   CH559USB_bd3a9e7.bin
+    -   Disable delay in the main loop to prevent RollerMouse Mobile input events from being dropped.
+
+### For Keyboard Quantizer mini
+
+-   keyboard_quantizer_mini_c4cca1dd1a6.uf2
+    -   Disable debounce.
+    -   Disable system_report_parser, consumer_report_parser, vendor_report_parser in order to avoid an issue that RollerMouse Mobile prevents macOS sleep.
+    -   Change serial number.
 
 ## How to update device firmware
 
